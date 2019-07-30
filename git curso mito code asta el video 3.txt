@@ -1,0 +1,356 @@
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git
+$ cd..
+bash: cd..: command not found
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git
+$ git init
+Initialized empty Git repository in C:/Users/user/Desktop/git/.git/
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Nuevo documento de texto.html
+        css/
+        js/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git add .
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Nuevo documento de texto.html
+        new file:   css/estilos.css
+        new file:   js/main.js
+
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git commit -m "Commit Inicial"
+[master (root-commit) b440740] Commit Inicial
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nuevo documento de texto.html
+ create mode 100644 css/estilos.css
+ create mode 100644 js/main.js
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$  git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git version
+git version 2.21.0.windows.1
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Nuevo documento de texto.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git diff
+diff --git a/Nuevo documento de texto.html b/Nuevo documento de texto.html
+index e69de29..78d87c5 100644
+--- a/Nuevo documento de texto.html
++++ b/Nuevo documento de texto.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++   <meta charset="UTF-8">
++   <meta name="viewport" content="width=device-width, initial-scale=1.0">
++   <meta http-equiv="X-UA-Compatible" content="ie=edge">
++   <title>Document</title>
++</head>
++<body>
++   <body>
++
++      <header>
++         <nav>
++            <ul>
++               <li>Your menu</li>
++            </ul>
++         </nav>
++      </header>
+ ESCOD
+diff --git a/Nuevo documento de texto.html b/Nuevo documento de texto.html
+index e69de29..78d87c5 100644
+--- a/Nuevo documento de texto.html
++++ b/Nuevo documento de texto.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++   <meta charset="UTF-8">
++   <meta name="viewport" content="width=device-width, initial-scale=1.0">
++   <meta http-equiv="X-UA-Compatible" content="ie=edge">
++   <title>Document</title>
++</head>
++<body>
++   <body>
++
++      <header>
++         <nav>
++            <ul>
++               <li>Your menu</li>
++            </ul>
++         </nav>
++      </header>
++
++      <section>
++
++         <article>
++            <header>
++               <h2>Article title</h2>
++               <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++         <article>
++            <header>
++               <h2>Article title</h2>
++               <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">Septembe+               <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">Septembe
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++      </section>
++
++      <aside>
++         <h2>About section</h2>
++         <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
++      </aside>
++
++      <footer>
++         <p>Copyright 2009 Your name</p>
++      </footer>
++
++   </body>
++</body>
++</html>
+\ No newline at end of file
+ ESCOC
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a>
+
+rbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+
+
+
+
+
+am egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.>
+
+
+
+>
+
+
+
+
+
+
+~
+~
+~
+ ESCOD
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++      </section>
++
++      <aside>
++         <h2>About section</h2>
++         <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
++      </aside>
++
++      <footer>
++         <p>Copyright 2009 Your name</p>
++      </footer>
++
++   </body>
++</body>
++</html>
+\ No newline at end of file
+ ESCOC
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a>
+
+rbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+
+
+
+
+
+am egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.>
+
+
+
+>
+
+
+
+
+
+
+~
+~
+~
+ ESCOD
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++      </section>
++
++      <aside>
++         <h2>About section</h2>
++         <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
++      </aside>
++
++      <footer>
++         <p>Copyright 2009 Your name</p>
++      </footer>
++
++   </body>
++</body>
++</html>
+\ No newline at end of file
+ ESCOD
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++      </section>
++
++      <aside>
++         <h2>About section</h2>
++         <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
++      </aside>
++
++      <footer>
++         <p>Copyright 2009 Your name</p>
++      </footer>
++
++   </body>
++</body>
++</html>
+\ No newline at end of file
+ ESCOD
++               <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">Septembe
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++      </section>
++
++      <aside>
++         <h2>About section</h2>
++         <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
++      </aside>
++
++      <footer>
++         <p>Copyright 2009 Your name</p>
++      </footer>
++
++   </body>
++</body>
++</html>
+\ No newline at end of file
+...skipping...
+r 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
++            </header>
++            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
++         </article>
++
++      </section>
++
++      <aside>
++         <h2>About section</h2>
++         <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
++      </aside>
++
++      <footer>
++         <p>Copyright 2009 Your name</p>
++      </footer>
++
++   </body>
++</body>
++</html>
+\ No newline at end of file
+(END)
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git checkout .
+Updated 1 path from the index
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Nuevo documento de texto.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git add .
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git commit -m "Se agrego titulo"
+[master 10422a3] Se agrego titulo
+ 1 file changed, 12 insertions(+)
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ git log
+commit 10422a30089461aa4751136e7acb23898174c3b2 (HEAD -> master)
+Author: JeysonVelogig <jeyson@velogig.com>
+Date:   Tue May 28 10:34:53 2019 -0500
+
+    Se agrego titulo
+
+commit b44074096cc2df437f891a8c24ee8abcbf3fef78
+Author: JeysonVelogig <jeyson@velogig.com>
+Date:   Tue May 28 10:20:01 2019 -0500
+
+    Commit Inicial
+
+user@DESKTOP-Q519QIH MINGW64 ~/Desktop/git (master)
+$ ^C
