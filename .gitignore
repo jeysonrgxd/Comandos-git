@@ -1,0 +1,6 @@
+#ignorando archivos de textos
+# *.txt
+# nombre.txt
+
+#ignorando carpetas con contenido
+/var/
