@@ -4,3 +4,17 @@
 
 #ignorando carpetas con contenido
 /var/
+
+#ignorar todos los archivos con la extenci .url
+*.url
+
+# investigar para los demas tipos de formatos o lenguajes
+#. 
+#.
+#.
+#.
+#.
+#.
+#.
+#.
+
