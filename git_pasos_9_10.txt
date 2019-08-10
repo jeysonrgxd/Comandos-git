@@ -1,0 +1,19 @@
+creacion de una nueva rama (bifurcacion de rama actual)
+$-git branch nueva_funcionalidad
+
+nos da una vista mas especifica de los commits y incluyendo en que ramos nos encontramos el cual es donde dHEAD->apunta
+$- git log --oneline --decorate --all --graph
+
+cambiar de rama
+$-git checkout nueva_funcionalidad
+
+una vez estando en la nueva rama le damos de nuevo el comando de git log --...... para ver donde apunta el head , luego ya podemos agrear el archivo nuevo creado el modificaco etc despues un commit
+despues haces un git log --.... para ver el commit despues prueba cambiando de ramas osea entrando ala rama master el cual es (git checkout master) y veras en tu carpeta de archivos como se va esa modificacicon nueva 
+
+una vez que estamos seguros que en la nueva rama acreada esta funcionando todo bien podemos unirla o fusionarla con la rama master pero primero nos bamos ala rama master con git checkuot master y despues asemos el merge (git merge nueva_funcionalidad)
+
+una vez unidad la rama creada ala master ya podemo eliminar la rama creada por mi (git branch -d nueva_funcionalidad)
+
+*TAGS
+git tag nombre
+git tag -d nombre
