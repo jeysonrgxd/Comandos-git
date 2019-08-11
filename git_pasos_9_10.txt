@@ -17,3 +17,40 @@ una vez unidad la rama creada ala master ya podemo eliminar la rama creada por m
 *TAGS
 git tag nombre
 git tag -d nombre
+
+denotar algunos detalles adicionales mas agregacion de mensaje
+git tag -a  v1.0.0 -m "vercion inicial"
+
+obtener el datalle que contiene asta el commit
+git show v1.0.0
+
+etiquetar commits elijiendo el codigo cuando asemos git log  --onlin.... esto para saber si es que olvidamos saber que ahi hubo un tag para llevar un mejor control de nuestros proyectos
+git tag -a v0.0.0 codigo -m "vercion de prueba"
+
+--github---
+al crear un repositorio hay unos codigos los cuales dicen cuando inicias un git ini o cuando ya tienes todo administrado por git y solo queda subirlo a git hub
+primero:
+git init
+"si quieres" git add README.md
+git commit -m "primer commit del proyecto"
+git remote add origin url(que te disen)
+git push -u origin master
+
+segundo:
+git remote add origin url(que tedan)
+git push -u origin master
+
+-clonar repositorio escojemos cual bamos aclonar le dame aclone copiamos el url y bamos anuestra carpeta y abrimo git y ejecutamos
+git clone url(que te dan)
+
+
+-modificar y subir a una rama especifica
+git add .
+git commit -m "nombre"
+git push origin master(nombre de la rama)
+
+-una vez creada un archivo nuevo desde git y traerlos a a nuestro directorio local
+git pull
+
+bemos el commit que isimos en git hub
+git lob
